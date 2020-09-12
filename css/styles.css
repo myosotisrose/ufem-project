@@ -1,1 +1,35 @@
-/* CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Cookie banner*/
+.cookie-banner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+    color: #808080;
+    font-size: 12px;
+    padding: 4px 15px;  
+    margin: 0;
+}
+
+.cookie-banner a {
+    color: #87cefa;
+    text-decoration: none;
+}
+
+.cookie-banner__close {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    color: #808080;
+    padding-bottom: 20px;
+    
+    
+}
