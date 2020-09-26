@@ -38,3 +38,15 @@ body {
     color: var(--Grey);
     padding-bottom: 20px;  
 }
+
+/* Search module */
+
+.logo {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+
+.logo img {
+    width: 250px;
+}
