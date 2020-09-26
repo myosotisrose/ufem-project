@@ -3,10 +3,10 @@
 }
 
 :root {
---light-grey--: #e4e4e4;
---pale-grey--:  #f2f2f2;
---grey--: #808080;
---sky-blue--: #87cefa;
+--Mercury: #e4e4e4;
+--Concrete:  #f2f2f2;
+--Grey: #808080;
+--Malibu: #87cefa;
 }
 
 body {
@@ -14,20 +14,20 @@ body {
     margin: 0;
 }
 
-/* Cookie banner*/
+/* Cookie banner */
 .cookie-banner {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--light-grey--);
-    background-color: var(--pale-grey--);
-    color: var(--grey--);
+    border-bottom: 1px solid var(--Mercury);
+    background-color: var(--Concrete);
+    color: var(--Grey);
     font-size: 12px;
     padding: 4px 15px;  
     margin: 0;
 }
 
 .cookie-banner a {
-    color: var(--sky-blue--);
+    color: var(--Malibu);
     text-decoration: none;
 }
 
@@ -35,6 +35,6 @@ body {
     cursor: pointer;
     background: none;
     border: 0;
-    color: var(--grey--);
+    color: var(--Grey);
     padding-bottom: 20px;  
 }
