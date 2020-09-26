@@ -3,18 +3,29 @@
 }
 
 :root {
---Mercury: #e4e4e4;
---Concrete:  #f2f2f2;
---Grey: #808080;
---Malibu: #87cefa;
---Dodger-Blue: #4387fd;
---Tundora: #404040;
---White: #ffffff; 
+    --Mercury: #e4e4e4;
+    --Concrete:  #f2f2f2;
+    --Grey: #808080;
+    --Malibu: #87cefa;
+    --Dodger-Blue: #4387fd;
+    --Tundora: #404040;
+    --White: #ffffff; 
 }
 
 body {
     font-family: 'Roboto', Helvetica, Arial sans-serif;
     margin: 0;
+}
+
+.sr-only {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 ul {
