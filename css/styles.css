@@ -3,13 +3,7 @@
 }
 
 :root {
-<<<<<<< HEAD
---Mercury: #e4e4e4;
---Concrete:  #f2f2f2;
---Grey: #808080;
---Malibu: #87cefa;
---Alto: #DEDEDE;
-=======
+    --Alto: #DEDEDE;
     --Mercury: #e4e4e4;
     --Concrete:  #f2f2f2;
     --Grey: #808080;
@@ -20,7 +14,6 @@
     --None: transparent;
     --fs-regular: 14px;
     --fs-bold: 700;
->>>>>>> develop
 }
 
 body {
