@@ -12,13 +12,15 @@
     --White: #ffffff; 
     --Alto: #DEDEDE;
     --None: transparent;
+    --fs-small: 12px;
     --fs-regular: 14px;
-    --fs-bold: 700;
+    --fw-regular: 400;
+    --fw-bold: 700;
 }
 
 html {
     position: relative;
-    min-height: 100%; 
+    min-height: 100%;
 }
 
 body {
@@ -76,7 +78,7 @@ ul {
     background-color: var(--None);
     border: 1px solid var(--None); 
     font-size: var(--fs-regular);
-    font-weight: var(--fs-bold);
+    font-weight: var(--fw-bold);
     color: var(--Tundora);
     padding: 7px 12px;
     margin: 0;
@@ -88,6 +90,17 @@ ul {
     border: 1px solid var(--Dodger-Blue);
     color: var(--White);
     outline: none;
+}
+
+.button--secondary {
+    background-color: var(--Concrete);
+    color: var(--Tundora);
+    border: 1px solid var(--Concrete);
+    font-weight: var(--fw-regular);
+}
+
+.button--small {
+    font-size: var(--fs-small);
 }
 
 .button--primary:focus {
@@ -108,6 +121,41 @@ ul {
 
 .button--icon:focus .icon {
     fill: var(--Gray);
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav {
+    padding: 0 30px;
+}
+
+.main-nav__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__list-item {
+    font-size: var(--fs-regular);
+}
+
+.main-nav__link {
+    text-decoration: none;
+    color: var(--Tundora);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.main-nav__link:focus {
+    text-decoration: underline;
 }
 
 /* Cookie banner */
@@ -174,26 +222,25 @@ ul {
     gap: 10px;
 }
 
+.search-icon,
+.search-icon__keyboard, 
+.search-icon__mic  {
+    width: 20px;
+    height: 20px;
+}
+
 .search-icon-left {
     display: flex;
     align-items: center;
     padding: 0 10px;
 }
 
-.google-buttons {
+.buttons {
    text-align: center;
-   
 }
 
-.google-buttons__search {
-    background-color: var(--Concrete);
-    color: var(--Grey);
-    border: 1px solid var(--Concrete);
-    border-radius: 5px;
-    font-size: 12px;
+.buttons .button {
     margin: 12px 6px;
-    padding: 10px 15px;
-    cursor: pointer;
 }
 
 /* Footer */
