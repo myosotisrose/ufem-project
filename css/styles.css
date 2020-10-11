@@ -12,8 +12,10 @@
     --Tundora: #404040;
     --White: #ffffff; 
     --None: transparent;
+    --fs-small: 12px;
     --fs-regular: 14px;
-    --fs-bold: 700;
+    --fw-regular: 400;
+    --fw-bold: 700;
 }
 
 body {
@@ -31,6 +33,57 @@ body {
     position: absolute;
     width: 1px;
 }
+
+.button {
+    cursor: pointer;
+    background-color: var(--None);
+    border: 1px solid var(--None); 
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-bold);
+    color: var(--Tundora);
+    padding: 7px 12px;
+    margin: 0;
+    border-radius: 2px;
+}
+
+.button--primary {
+    background-color: var(--Dodger-Blue);
+    border: 1px solid var(--Dodger-Blue);
+    color: var(--White);
+    outline: none;
+}
+
+.button--secondary {
+    background-color: var(--Concrete);
+    color: var(--Tundora);
+    border: 1px solid var(--Concrete);
+    font-weight: var(--fw-regular);
+}
+
+.button--small {
+    font-size: var(--fs-small);
+}
+
+.button--primary:focus {
+    background-color: var(--Royal-Blue);
+    border-color: var(--Royal-Blue);
+}
+
+.button--icon {
+    padding: 3px 12px;
+    outline: none;
+}
+
+.button--icon .icon {
+    width: 22px;
+    height: 22px;
+    fill: var(--Tundora);
+}
+
+.button--icon:focus .icon {
+    fill: var(--Gray);
+}
+
 
 ul {
     list-style-type: none;
@@ -64,45 +117,6 @@ ul {
 
 .main-nav__link:focus {
     text-decoration: underline;
-}
-
-.button {
-    cursor: pointer;
-    background-color: var(--None);
-    border: 1px solid var(--None); 
-    font-size: var(--fs-regular);
-    font-weight: var(--fs-bold);
-    color: var(--Tundora);
-    padding: 7px 12px;
-    margin: 0;
-    border-radius: 2px;
-}
-
-.button--primary {
-    background-color: var(--Dodger-Blue);
-    border: 1px solid var(--Dodger-Blue);
-    color: var(--White);
-    outline: none;
-}
-
-.button--primary:focus {
-    background-color: var(--Royal-Blue);
-    border-color: var(--Royal-Blue);
-}
-
-.button--icon {
-    padding: 3px 12px;
-    outline: none;
-}
-
-.button--icon .icon {
-    width: 22px;
-    height: 22px;
-    fill: var(--Tundora);
-}
-
-.button--icon:focus .icon {
-    fill: var(--Gray);
 }
 
 /* Cookie banner */
@@ -169,28 +183,23 @@ ul {
     gap: 10px;
 }
 
+.search-icon,
+.search-icon__keyboard, 
+.search-icon__mic  {
+    width: 20px;
+    height: 20px;
+}
+
 .search-icon-left {
     display: flex;
     align-items: center;
     padding: 0 10px;
 }
 
-.google-buttons {
+.buttons {
    text-align: center;
-   
 }
 
-.google-buttons__search {
-    background-color: var(--Concrete);
-    color: var(--Grey);
-    border: 1px solid var(--Concrete);
-    border-radius: 5px;
-    font-size: 12px;
+.buttons .button {
     margin: 12px 6px;
-    padding: 10px 15px;
-    cursor: pointer;
 }
-
-
-
-
