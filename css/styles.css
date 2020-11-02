@@ -88,6 +88,10 @@ body {
     cursor: pointer;
 }
 
+.button > * {
+    pointer-events: none;
+}
+
 .button--primary {
     color: var(--White);
     background-color: var(--Dodger-Blue);
@@ -168,6 +172,11 @@ body {
     box-shadow: 0 0 0.3em var(--Alto);
     background-color: var(--White);
     overflow-y: auto;
+    display: none;
+}
+
+.dropdown-menu.is-open {
+    display: block;
 }
 
 .dropdown-menu__list {

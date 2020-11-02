@@ -29,7 +29,7 @@
                     <a href="#URL_IMAGES" class="main-nav__link">Images</a>
                 </li>
                 <li class="main-nav__list-item">
-                    <button class="button button--icon">
+                    <button class="button button--icon" data-products-dropdown-trigger>
                         <svg class="icon" viewBox="0 0 24 24">
                             <path
                                 d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
@@ -41,7 +41,7 @@
                     <button class="button button--primary">Sign in</button>
                 </li>
             </ul>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" data-products-dropdown>
                 <ul class="dropdown-menu__list">
                     <li class="dropdown-menu__list-item">
                         <a href="#URL_BUTTON" class="dropdown-menu__list-link">
@@ -208,9 +208,10 @@
                             Button
                         </a>
                     </li>
-                    <div class="more-button">
-                        <button class="button button--small border-only">More from Google</button>
-                    </div>
+                </ul>
+                <div class="more-button">
+                    <button class="button button--small border-only">More from Google</button>
+                </div>
             </div>
         </nav>
     </header>
