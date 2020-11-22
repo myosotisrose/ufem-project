@@ -220,7 +220,7 @@
                 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
             </a>
         </div>
-        <div class="search">
+        <div class="search" data-search>
             <div class="search-wrapper">
                 <div class="search-icon-left">
                     <svg class="search-icon" viewBox="0 0 24 24">
@@ -229,7 +229,7 @@
                         </path>
                     </svg>
                 </div>
-                <input type="search">
+                <input type="search" data-search-input>
                 <div class="search-icon-right">
                     <svg class="search-icon__keyboard" viewBox="0 0 24 24">
                         <path
@@ -244,6 +244,88 @@
                 </div>
             </div>
         </div>
+
+        <div class="keyboard" data-keyboard>
+            <div class="keyboard__lang">Polish</div>
+            <button class="keyboard__close" data-keyboard-close>&times;</button>
+            <ul class="keyboard__keyboard" data-keyboard-panel>
+                <li class="keyboard__rows">
+                    <ul class="keyboard__keys">
+                        <li class="keyboard__key"><button class="keyboard__trigger">`</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">1</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">2</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">3</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">4</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">5</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">6</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">7</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">8</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">9</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">0</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">-</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">=</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">DEL</button></li>
+                    </ul>
+                </li>
+                <li class="keyboard__rows">
+                    <ul class="keyboard__keys">
+                        <li class="keyboard__key"><button class="keyboard__trigger">q</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">w</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">e</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">r</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">t</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">y</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">u</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">i</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">o</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">p</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">[</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">]</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">\</button></li>
+                    </ul>
+                </li>
+                <li class="keyboard__rows">
+                    <ul class="keyboard__keys">
+                        <li class="keyboard__key"><button class="keyboard__trigger">CAPS</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">a</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">s</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">d</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">f</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">g</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">h</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">j</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">k</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">l</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">;</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">'</button></li>
+                    </ul>
+                </li>
+                <li class="keyboard__rows">
+                    <ul class="keyboard__keys">
+                        <li class="keyboard__key"><button class="keyboard__trigger">SHIFT</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">z</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">x</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">c</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">v</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">b</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">n</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">m</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">,</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">.</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">/</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">SHIFT</button></li>
+                    </ul>
+                </li>
+                <li class="keyboard__rows">
+                    <ul class="keyboard__keys">
+                        <li class="keyboard__key"><button class="keyboard__trigger">CTRL+ALT</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">SPACE</button></li>
+                        <li class="keyboard__key"><button class="keyboard__trigger">CTRL+ALT</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
         <div class="buttons">
             <button class="button button--secondary button--small">Google Search</button>
             <button class="button button--secondary button--small">I'm Feeling Lucky</button>

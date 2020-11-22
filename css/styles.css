@@ -364,3 +364,21 @@ body {
     background-color: var(--Concrete);
     border-top: 1px solid var(--Mercury);
 }
+
+.keyboard {
+    width: 100%;
+}
+
+.keyboard__keyboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.keyboard__rows {
+    flex: 0 0 100%;
+}
+
+.keyboard__keys {
+    justify-content: center;
+}
