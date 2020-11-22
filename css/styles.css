@@ -30,7 +30,7 @@ body {
     font-family: "Roboto", Helvetica, Arial sans-serif;
 }
 
-ul {
+.main-nav__list {
     justify-content: flex-end;
     display: flex;
     padding: 0;
@@ -88,6 +88,10 @@ ul {
     cursor: pointer;
 }
 
+.button > * {
+    pointer-events: none;
+}
+
 .button--primary {
     color: var(--White);
     background-color: var(--Dodger-Blue);
@@ -104,6 +108,7 @@ ul {
 
 .button--small {
     font-size: var(--fs-small);
+    text-decoration: none;
 }
 
 .button--primary:focus {
@@ -154,6 +159,78 @@ ul {
 .main-nav__link:focus {
     text-decoration: underline;
 }
+
+/* Dropdown */
+
+.dropdown-menu {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border: 1px solid var(--Alto);
+    border-radius: 5px;
+    right: 30px;
+    margin-top: 10px;
+    box-shadow: 0 0 0.3em var(--Alto);
+    background-color: var(--White);
+    overflow-y: auto;
+    display: none;
+    padding-right: 10px;
+}
+
+.dropdown-menu.is-open {
+    display: block;
+}
+
+.dropdown-menu__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.dropdown-menu__list-link {
+    text-decoration: none;
+    color: var(--Tundora);
+    font-size: var(--fs-regular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-menu__icon {
+    background-image: url(https://ssl.gstatic.com/gb/images/p2_135c9ecc.png);
+    background-size: 64px 2962px;
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dropdown-menu__icon--gmail {
+    background-position-x: 0px;
+    background-position-y: -690px;
+}
+
+.dropdown-menu__list:not(:last-of-type) {
+    border-bottom: 1px solid var(--Alto);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.more-button {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button--border-only {
+    color: var(--Royal-Blue);
+    background-color: var(--White);
+    font-weight: var(--fw-regular);
+    border: 1px solid var(--Alto);
+}
+
 
 /* Cookie banner */
 .cookie-banner {
@@ -260,6 +337,13 @@ ul {
     padding: 10px 30px;
     background-color: var(--Concrete);
     border-top: 1px solid var(--Mercury);
+}
+
+.footer__links-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 .footer__links-item:not(:first-child) {
