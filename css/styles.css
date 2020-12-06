@@ -283,6 +283,7 @@ body {
     border: none;
 }
 
+
 .search-wrapper {
     justify-content: space-between;
     display: flex;
@@ -291,6 +292,16 @@ body {
     margin: 0 auto;
     border: 1px solid var(--Alto);
     border-radius: 20px;
+}
+
+@media (max-width: 575.98px) {
+    .search-wrapper {
+        width: 100%;
+    }
+
+    .search input {
+        width: calc(100% - 100px);
+    }
 }
 
 .search-icon-right {
@@ -346,8 +357,17 @@ body {
     list-style-type: none;
 }
 
-.footer__links-item:not(:first-child) {
-    padding-left: 30px;
+@media (max-width: 575.98px) {
+    .footer__links-list {
+        width: 250px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer__links-item:not(:first-child) {
+        padding-left: 30px;
+    }
 }
 
 .footer__links-item a {
