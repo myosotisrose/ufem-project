@@ -295,6 +295,16 @@ body {
     border-radius: 20px;
 }
 
+@media (max-width: 575.98px) {
+    .search-wrapper {
+        width: 100%;
+    }
+
+    .search input {
+        width: calc(100% - 100px);
+    }
+}
+
 .search-icon-right {
     align-items: center;
     display: flex;
@@ -348,8 +358,17 @@ body {
     list-style-type: none;
 }
 
-.footer__links-item:not(:first-child) {
-    padding-left: 30px;
+@media (max-width: 575.98px) {
+    .footer__links-list {
+        width: 250px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer__links-item:not(:first-child) {
+        padding-left: 30px;
+    }
 }
 
 .footer__links-item a {
